@@ -3,7 +3,7 @@ from torchvision import models
 
 
 # Taking intermediate features of VGG16
-orig_vgg16 = models.vgg16(pretrained=False)
+orig_vgg16 = models.vgg16(pretrained=True)
 
 class VGG16_intermediate(nn.Module):
     def __init__(self):
